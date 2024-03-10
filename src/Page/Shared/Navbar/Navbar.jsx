@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../../assets/lgo.png";
+import logo from "../../../assets/devslogo.png";
 import useAuth from "../../../hooks/useAuth";
 const Navbar = () => {
  const {user, logOut} = useAuth();
@@ -11,13 +11,13 @@ const Navbar = () => {
  }
   const links = (
     <>
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/"
@@ -25,13 +25,13 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/addJobs"
@@ -39,13 +39,13 @@ const Navbar = () => {
           Add Job
         </NavLink>
       </li>
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/myPosted"
@@ -54,13 +54,13 @@ const Navbar = () => {
         </NavLink>
       </li>
  
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/myBids"
@@ -68,13 +68,13 @@ const Navbar = () => {
           My Bids
         </NavLink>
       </li>
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/bidRequests"
@@ -82,13 +82,13 @@ const Navbar = () => {
           Bid Requests
         </NavLink>
       </li>
-      <li className="text-slate-900 text-lg font-bold">
+      <li className="text-[#4ca1af] text-lg font-bold">
         <NavLink
           style={({ isActive }) => {
             return {
               fontWeight: isActive ? "bold" : "",
               backgroundColor: isActive ? "white" : "",
-              color: isActive ? "#c84fcb" : "",
+              color: isActive ? "#2c3e50" : "",
             };
           }}
           to="/helpCenter"
@@ -137,8 +137,8 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="hidden lg:flex items-center gap-2">
-            <img className="w-24 " src={logo} alt="" />
-            <h4 className="font-bold">Luxe Market Pro</h4>
+            <img className=" w-28 ml-5 " src={logo} alt="" />
+            {/* <h4 className="font-bold">Cloud Devs Pro</h4> */}
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -164,12 +164,12 @@ const Navbar = () => {
             />
           )}
           {user ? (
-            <button onClick={handleLogOut} className="btn px-5 mr-3 py-2  rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <button onClick={handleLogOut} className="btn px-5 mr-3 py-2  rounded-full bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white text-[#2c3e50]enter font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400">
               Log Out
             </button>
           ) : (
             <>
-              <Link to="/login" className="btn px-5 mr-3 py-2  rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400">
+              <Link to="/login" className="btn px-5 mr-3 py-2  rounded-full bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white text-[#2c3e50]enter font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400">
                 Login
               </Link>
            
@@ -182,3 +182,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+// #2c3e50 #4ca1af

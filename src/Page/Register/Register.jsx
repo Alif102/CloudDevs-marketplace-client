@@ -77,14 +77,14 @@ const navigate = useNavigate()
     return (
         <div>
           <Helmet>
-            <title>Luxe Market Pro | Register</title>
+            <title>Cloud Devs Pro | Register</title>
           </Helmet>
               <div className="min-h-screen flex items-center justify-center bg-purple-100">
       <div className="bg-white w-96 p-8 rounded-lg shadow-lg">
-        <h1 className="text-center text-purple-700 font-semibold text-2xl">Register</h1>
+        <h1 className="text-[#2c3e50]enter text-[#4ca1af] font-semibold text-2xl">Register</h1>
         <form onSubmit={ handleRegister } className="mt-6">
          <div>
-            <h1 className="font-bold mb-2 ml-1 text-purple-700">Image Url</h1>
+            <h1 className="font-bold mb-2 ml-1 text-[#4ca1af]">Image Url</h1>
          <input
             className="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:border-purple-400 focus:bg-white"
             type="text"
@@ -94,7 +94,7 @@ const navigate = useNavigate()
           />
          </div>
          <div className="py-3">
-            <h1 className="font-bold mb-2 ml-1 text-purple-700">Name</h1>
+            <h1 className="font-bold mb-2 ml-1 text-[#4ca1af]">Name</h1>
          <input
             className="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:border-purple-400 focus:bg-white"
             type="text"
@@ -104,7 +104,7 @@ const navigate = useNavigate()
           />
          </div>
          <div className="py-3">
-            <h1 className="font-bold mb-2 ml-1 text-purple-700">Email</h1>
+            <h1 className="font-bold mb-2 ml-1 text-[#4ca1af]">Email</h1>
          <input
             className="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:border-purple-400 focus:bg-white"
             type="email"
@@ -114,7 +114,7 @@ const navigate = useNavigate()
           />
          </div>
          <div className="py-3">
-            <h1 className="font-bold mb-2 ml-1 text-purple-700">Password</h1>
+            <h1 className="font-bold mb-2 ml-1 text-[#4ca1af]">Password</h1>
          <input
             className="w-full px-4 py-2 text-gray-700 bg-gray-200 rounded-full focus:outline-none focus:border-purple-400 focus:bg-white"
             type="password"
@@ -125,13 +125,13 @@ const navigate = useNavigate()
          </div>
     
           <button
-            className="w-full mt-4 py-3 px-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="w-full mt-4 py-3 px-4 rounded-full bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white text-[#2c3e50]enter font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
           >
             Register
           </button>
           <button
           onClick={handleSignInWithGoogle}
-            className="w-full mt-4 py-2  px-4 flex justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-center font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="w-full mt-4 py-2  px-4 flex justify-center rounded-full bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white text-[#2c3e50]enter font-semibold text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
           >
            <img className="w-7" src="https://seeklogo.com/images/G/google-2015-logo-65BBD07B01-seeklogo.com.png" alt="" />
           </button>

@@ -11,7 +11,7 @@ const Banner = () => {
           />
           <div>
             <h1 className="text-5xl font-bold">
-              <span className="text-fuchsia-400">If you want</span> to get job then you have come to right place
+              <span className="text-[#479daa]">If you want</span> to get job then you have come to right place
             </h1>
             <p className="py-6">
             If you are seeking employment opportunities, you have landed in the perfect spot. Our platform offers a wide range of job listings and resources to help you kickstart your career journey with confidence.

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 
@@ -12,7 +13,7 @@ const TabsCard = ({ tabs }) => {
   console.log(allData);
 
   useEffect(() => {
-    fetch('https://luxe-market-pro-server-side.vercel.app/allJobs')
+    fetch('https://clouddevs.vercel.app/allJobs')
 
       .then((res) => res.json())
       .then((data) => {
@@ -36,7 +37,7 @@ const TabsCard = ({ tabs }) => {
             tabs.map((t) => 
               <Tab
                 key={t._id}
-                className="py-3 px-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white"
+                className="py-3 px-4 bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white"
               > 
                 {t.name}
               </Tab>
@@ -64,7 +65,7 @@ const TabsCard = ({ tabs }) => {
         <TabPanel >
           <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:ml-28 ml-2 mt-10">
                 {
-        gd.map(item => <TabItems   ems item={item} key={item._id}></TabItems>)
+        gd.map(item => <TabItems    item={item} key={item._id}></TabItems>)
        }
 
           </div>

@@ -1,4 +1,4 @@
-import logo  from '../../../assets/lgo.png'
+// import logo  from '../../../assets/devslogo.png'
 
 
 const Footer = () => {
@@ -7,12 +7,12 @@ const Footer = () => {
     return (
         <div>
       
-           <footer className="footer p-10 lg:w-full md:w-full w-[320px] bg-gradient-to-r from-purple-500 to-pink-500 text-white">
+           <footer className="footer p-10 lg:w-full md:w-full w-[320px] bg-gradient-to-r from-[#2c3e50] to-[#4ca1af] text-white">
   <aside>
-   <img className='w-20' src={logo} alt="" />
-   <h2 className="text-xl text-white">Luxe Market Pro</h2>
-    <p>Contact: +880140455331/raufelahi9876@gmail.com</p>
-    <p>Address: Rajshahi</p>
+   {/* <img className='w-20' src={logo} alt="" /> */}
+   <h2 className="text-xl text-white">Cloud Devs Pro</h2>
+    <p>Contact: +8801797470501/alifahmed102@gmail.com</p>
+    <p>Address: Mymensingh</p>
   </aside> 
   <nav>
     <header className="footer-title">Social</header> 
@@ -22,7 +22,7 @@ const Footer = () => {
       <a href="https://web.facebook.com/people/Kazi-Rauf-Elahi/pfbid0A56cjVd6VsiZuYMkK9tYFP8DG3teWGs2dyJnu6b94EJSwvJ3oCc4bYwoZTPFCiCal/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
     </div>
     <footer> <aside>
-    <p>Copyright © 2023 - All right reserved by Luxe Market Pro</p>
+    <p>Copyright © 2023 - All right reserved by Cloud Devs Pro</p>
   </aside></footer>
   </nav>
 </footer>
